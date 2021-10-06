@@ -1,5 +1,5 @@
 ## Summary
-This is a ruby project focused on httparty gem to test the APIs from openweathermap.org
+This is a Ruby project focused on using Httparty gem to test the GET Requests from openweathermap.org.
 
 ## Dependencies 
 
