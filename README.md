@@ -2,7 +2,7 @@
 
 * Ruby 2.7 installed (https://rubyinstaller.org/downloads/)
 * Node.js installed
-* Java 8
+* Java 8 or greater
 
 ## Installation
 
