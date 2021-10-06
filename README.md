@@ -1,3 +1,6 @@
+## Summary
+This is a ruby project focused on httparty gem to test the APIs from openweathermap.org
+
 ## Dependencies 
 
 * Ruby 2.7 installed (https://rubyinstaller.org/downloads/)
