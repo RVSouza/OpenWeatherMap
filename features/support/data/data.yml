@@ -1,0 +1,85 @@
+api_key: 114ae75709286dbc1cf80b28550cc080
+
+city: 
+  Belo Horizonte: 
+    id: 3470127
+    country: BR
+    name: Belo Horizonte
+    latitude: -19.9208
+    longitude: -43.9378
+  Delhi: 
+    id: 1273294
+    country: IN
+    name: Delhi
+    latitude: 28.6667
+    longitude: 77.2167
+  New York: 
+    id: 5128581
+    country: US
+    name: New York
+    latitude: 40.7143
+    longitude: -74.006
+    zip_code: 10001
+  Tokyo: 
+    id: 1850144
+    country: JP
+    name: Tokyo
+    latitude: 35.6895
+    longitude: 139.6917
+
+lang:
+  Afrikaans: af
+  Albanian: al
+  Arabic: ar
+  Azerbaijani: az
+  Bulgarian: bg
+  Catalan: ca
+  Czech: cz
+  Danish: da
+  German: de
+  Greek: el
+  English: en
+  Basque: eu
+  Persian: fa
+  Finnish: fi
+  French: fr
+  Galician: gl
+  Hebrew: he
+  Hindi: hi
+  Croatian: hr
+  Hungarian: hu
+  Indonesian: id
+  Italian: it
+  Japanese: ja
+  Korean: kr
+  Latvian: la
+  Lithuanian: lt
+  Macedonian: mk
+  Norwegian: 'no'
+  Dutch: nl
+  Polish: pl
+  Portuguese: pt
+  Portuguese_Br: pt_br
+  Romanian: ro
+  Russian: ru
+  Swedish: sv, se
+  Slovak: sk
+  Slovenian: sl
+  Spanish: sp, es
+  Serbian: st
+  Thai: th
+  Turkish: tr
+  Ukrainian: ua, uk
+  Vietnamese: vi
+  Chinese Simplified: zh_cn
+  Chinese_Traditional: zh_tw
+  Zulu: zu
+
+mode:
+  xml: xml
+  html: html
+
+units:
+  standard: standard
+  metric: metric
+  imperial: imperial

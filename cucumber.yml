@@ -1,0 +1,15 @@
+default: -p pretty -p ci -p html_report -p json_report -p weather -p quiet -p allure
+
+# Environment
+weather: ENVIRONMENT_TYPE=weather
+
+# Formats
+pretty: --format pretty
+ci: --format progress
+quiet: --publish-quiet
+
+#Reports
+html_report: --format html --out=report/cucumber/report.html
+json_report: --format json --out=report/cucumber/report.json
+allure: --format AllureCucumber::CucumberFormatter --out report/allure-results
+

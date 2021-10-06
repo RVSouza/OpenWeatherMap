@@ -1,0 +1,14 @@
+required:
+  bbox: '&bbox={0}'
+  cnt: '&cnt={0}'
+  id: '&id={0}'
+  lat: '&lat={0}'
+  lon: '&lon={0}'
+  q: '&q={0}'
+  zip: '&zip={0}'
+
+optional:
+  lang: '&lang={0}'
+  mode: '&mode={0}'
+  units: '&units={0}'
+  
