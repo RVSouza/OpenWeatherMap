@@ -1,13 +1,9 @@
 # frozen_string_literal: true
 
-# Class principal com os principais metodos usados em toda automacao
+# Main class with common methods that can be used on other classes
 class MainClass
   def base_url
     change_word(URL['base'], DATA['api_key'])
-  end
-
-  def get_request(url)
-    HTTParty.get(url)
   end
 
   def change_word(word, *new_word)

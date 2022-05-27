@@ -1,1 +1,466 @@
-[{"id":"check-weather-forecast","uri":"features/specs/check_weather_forecast.feature","keyword":"Feature","name":"Check Weather Forecast","description":"","line":4,"tags":[{"name":"@check_weather","line":3}],"elements":[{"id":"check-weather-forecast;check-by-valid-city-name","keyword":"Scenario","name":"Check by valid city name","description":"","line":7,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by name: 'Delhi'","line":8,"match":{"location":"features/step_definitions/check_weather_forecast.rb:3"},"result":{"status":"passed","duration":1014217754}},{"keyword":"Then ","name":"the response code is '200'","line":9,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":1335169}},{"keyword":"And ","name":"returns the forecast data for the city","line":10,"match":{"location":"features/step_definitions/check_weather_forecast.rb:47"},"result":{"status":"passed","duration":3700908}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_valid_city_name","line":6}]},{"id":"check-weather-forecast;check-by-invalid-city-name","keyword":"Scenario","name":"Check by invalid city name","description":"","line":13,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by name with an invalid data","line":14,"match":{"location":"features/step_definitions/check_weather_forecast.rb:8"},"result":{"status":"passed","duration":2042201521}},{"keyword":"Then ","name":"the response code is '404'","line":15,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":68041}},{"keyword":"And ","name":"returns the default not found response","line":16,"match":{"location":"features/step_definitions/check_weather_forecast.rb:81"},"result":{"status":"passed","duration":135355}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_invalid_city_name","line":12}]},{"id":"check-weather-forecast;check-by-valid-city-id","keyword":"Scenario","name":"Check by valid city id","description":"","line":19,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by id of 'Tokyo'","line":20,"match":{"location":"features/step_definitions/check_weather_forecast.rb:13"},"result":{"status":"passed","duration":978696330}},{"keyword":"Then ","name":"the response code is '200'","line":21,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":181235}},{"keyword":"And ","name":"returns the forecast data for the city","line":22,"match":{"location":"features/step_definitions/check_weather_forecast.rb:47"},"result":{"status":"passed","duration":820421}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_valid_city_id","line":18}]},{"id":"check-weather-forecast;check-by-invalid-city-id","keyword":"Scenario","name":"Check by invalid city id","description":"","line":25,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by an invalid id","line":26,"match":{"location":"features/step_definitions/check_weather_forecast.rb:18"},"result":{"status":"passed","duration":952802061}},{"keyword":"Then ","name":"the response code is '404'","line":27,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":112477}},{"keyword":"And ","name":"returns the default not found response","line":28,"match":{"location":"features/step_definitions/check_weather_forecast.rb:81"},"result":{"status":"passed","duration":374669}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_invalid_city_id","line":24}]},{"id":"check-weather-forecast;check-by-valid-city-coordinates","keyword":"Scenario","name":"Check by valid city coordinates","description":"","line":31,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by the coordinates of 'Belo Horizonte'","line":32,"match":{"location":"features/step_definitions/check_weather_forecast.rb:23"},"result":{"status":"passed","duration":984256474}},{"keyword":"Then ","name":"the response code is '200'","line":33,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":116581}},{"keyword":"And ","name":"returns the forecast data for the city","line":34,"match":{"location":"features/step_definitions/check_weather_forecast.rb:47"},"result":{"status":"passed","duration":596217}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_valid_city_coordinates","line":30}]},{"id":"check-weather-forecast;check-by-invalid-city-coordinates","keyword":"Scenario","name":"Check by invalid city coordinates","description":"","line":37,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by invalid coordinates","line":38,"match":{"location":"features/step_definitions/check_weather_forecast.rb:28"},"result":{"status":"passed","duration":975445317}},{"keyword":"Then ","name":"the response code is '400'","line":39,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":171105}},{"keyword":"And ","name":"returns the invalid latitude/longitude response","line":40,"match":{"location":"features/step_definitions/check_weather_forecast.rb:86"},"result":{"status":"passed","duration":3124038}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_invalid_city_coordinates","line":36}]},{"id":"check-weather-forecast;check-by-valid-city-zip-code","keyword":"Scenario","name":"Check by valid city zip code","description":"","line":43,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by the zip code of 'New York'","line":44,"match":{"location":"features/step_definitions/check_weather_forecast.rb:33"},"result":{"status":"passed","duration":998865695}},{"keyword":"Then ","name":"the response code is '200'","line":45,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":128688}},{"keyword":"And ","name":"returns the forecast data for the city","line":46,"match":{"location":"features/step_definitions/check_weather_forecast.rb:47"},"result":{"status":"passed","duration":847839}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_valid_city_zip_code","line":42}]},{"id":"check-weather-forecast;check-by-invalid-city-zip-code","keyword":"Scenario","name":"Check by invalid city zip code","description":"","line":49,"type":"scenario","steps":[{"keyword":"When ","name":"I call the request that verify the city forecast by invalid zip code","line":50,"match":{"location":"features/step_definitions/check_weather_forecast.rb:38"},"result":{"status":"passed","duration":1036517469}},{"keyword":"Then ","name":"the response code is '404'","line":51,"match":{"location":"features/step_definitions/check_weather_forecast.rb:43"},"result":{"status":"passed","duration":128082}},{"keyword":"And ","name":"returns the default not found response","line":52,"match":{"location":"features/step_definitions/check_weather_forecast.rb:81"},"result":{"status":"passed","duration":329548}}],"tags":[{"name":"@check_weather","line":3},{"name":"@check_by_invalid_city_zip_code","line":48}]}]}]
+[
+  {
+    "id": "check-weather-forecast",
+    "uri": "features/specs/check_weather_forecast.feature",
+    "keyword": "Feature",
+    "name": "Check Weather Forecast",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@check_weather",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "check-weather-forecast;check-by-valid-city-name",
+        "keyword": "Scenario",
+        "name": "Check by valid city name",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by name: 'Delhi'",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1049114700
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '200'",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3522000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the forecast data for the city",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6709400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_valid_city_name",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "id": "check-weather-forecast;check-by-invalid-city-name",
+        "keyword": "Scenario",
+        "name": "Check by invalid city name",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by name with an invalid data",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2077730900
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '404'",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the default not found response",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_invalid_city_name",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "id": "check-weather-forecast;check-by-valid-city-id",
+        "keyword": "Scenario",
+        "name": "Check by valid city id",
+        "description": "",
+        "line": 19,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by id of 'Tokyo'",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 994533500
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '200'",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the forecast data for the city",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 289500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_valid_city_id",
+            "line": 18
+          }
+        ]
+      },
+      {
+        "id": "check-weather-forecast;check-by-invalid-city-id",
+        "keyword": "Scenario",
+        "name": "Check by invalid city id",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by an invalid id",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 990542400
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '404'",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the default not found response",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_invalid_city_id",
+            "line": 24
+          }
+        ]
+      },
+      {
+        "id": "check-weather-forecast;check-by-valid-city-coordinates",
+        "keyword": "Scenario",
+        "name": "Check by valid city coordinates",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by the coordinates of 'Belo Horizonte'",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 976860800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '200'",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the forecast data for the city",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_valid_city_coordinates",
+            "line": 30
+          }
+        ]
+      },
+      {
+        "id": "check-weather-forecast;check-by-invalid-city-coordinates",
+        "keyword": "Scenario",
+        "name": "Check by invalid city coordinates",
+        "description": "",
+        "line": 37,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by invalid coordinates",
+            "line": 38,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1008847200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '400'",
+            "line": 39,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the invalid latitude/longitude response",
+            "line": 40,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3438500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_invalid_city_coordinates",
+            "line": 36
+          }
+        ]
+      },
+      {
+        "id": "check-weather-forecast;check-by-valid-city-zip-code",
+        "keyword": "Scenario",
+        "name": "Check by valid city zip code",
+        "description": "",
+        "line": 43,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by the zip code of 'New York'",
+            "line": 44,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 961161000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '200'",
+            "line": 45,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74600
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the forecast data for the city",
+            "line": 46,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 278700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_valid_city_zip_code",
+            "line": 42
+          }
+        ]
+      },
+      {
+        "id": "check-weather-forecast;check-by-invalid-city-zip-code",
+        "keyword": "Scenario",
+        "name": "Check by invalid city zip code",
+        "description": "",
+        "line": 49,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I call the request that verify the city forecast by invalid zip code",
+            "line": 50,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1003600100
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the response code is '404'",
+            "line": 51,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "returns the default not found response",
+            "line": 52,
+            "match": {
+              "location": "features/step_definitions/check_weather_forecast.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@check_weather",
+            "line": 3
+          },
+          {
+            "name": "@check_by_invalid_city_zip_code",
+            "line": 48
+          }
+        ]
+      }
+    ]
+  }
+]
