@@ -1,2 +1,2 @@
-report/allure-results/*
+report/allure-results/*.json
 report/cucumber/report.*
